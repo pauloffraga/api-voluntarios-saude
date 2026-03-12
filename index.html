@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Profissionais de Saúde</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Cadastro de Voluntários da Saúde</h1>
+
+<form id="formProfissional">
+
+<input type="text" id="nome" placeholder="Nome completo" required>
+
+<input type="email" id="email" placeholder="Email" required>
+
+<input type="text" id="telefone" placeholder="Telefone" required>
+
+<select id="profissao" required>
+<option value="">Selecione a profissão</option>
+<option value="Médico">Médico</option>
+<option value="Dentista">Dentista</option>
+</select>
+
+<textarea id="mensagem" placeholder="Mensagem (opcional)"></textarea>
+
+<button type="submit">Cadastrar</button>
+
+</form>
+
+<h2>Profissionais cadastrados</h2>
+
+<ul id="listaProfissionais"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
